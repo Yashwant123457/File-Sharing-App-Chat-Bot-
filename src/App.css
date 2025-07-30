@@ -1,0 +1,111 @@
+/* Common styles for sender and receiver apps */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="url"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+textarea,
+select {
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.uploaded-file,
+.message {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-top: 15px;
+  max-width: 600px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.uploaded-file h4,
+.message strong {
+  color: #34495e;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 200px;
+  border-radius: 4px;
+}
+
+audio,
+video {
+  max-width: 300px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
