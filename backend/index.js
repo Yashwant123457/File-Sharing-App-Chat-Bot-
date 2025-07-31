@@ -172,7 +172,8 @@ const subscriptionServer = SubscriptionServer.create(
 );
 
 // ✅ Start server
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
+
 
 httpServer.listen(PORT, () => {
   console.log(`🚀 GraphQL ready at http://localhost:${PORT}${apolloServer.graphqlPath}`);
