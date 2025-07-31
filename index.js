@@ -101,7 +101,7 @@ const resolvers = {
           filename,
           mimetype,
           encoding,
-          url: `http://localhost:4000/uploads/${filename}`,
+          url: `https://file-sharing-backend-e1da.onrender.com/uploads/${filename}`,
         };
       }
 
@@ -175,6 +175,7 @@ const subscriptionServer = SubscriptionServer.create(
 const PORT = process.env.PORT || 4000;
 
 httpServer.listen(PORT, () => {
-  console.log(`🚀 GraphQL ready at http://localhost:${PORT}${apolloServer.graphqlPath}`);
-  console.log(`📡 Subscriptions ready at ws://localhost:${PORT}${apolloServer.graphqlPath}`);
+  console.log(`🚀 GraphQL ready at https://file-sharing-backend-e1da.onrender.com/graphql`);
+  console.log(`📡 Subscriptions ready at wss://file-sharing-backend-e1da.onrender.com/graphql`);
+
 });
